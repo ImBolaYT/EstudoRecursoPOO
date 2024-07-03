@@ -1,0 +1,29 @@
+<!--PEDE AO UTILIZADOR NUMEROS ATÉ ELE INSERIR 0-->
+<!--DEPOIS MOSTRA O NÚMERO MAIOR E MENOR COLOCADO NESSE INTERVALO-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11</title>
+</head>
+<body>
+    <script>
+        let num = +prompt("Enter a number: ");
+        let max = num;
+        let min = num;
+
+        while (num !== 0) {
+            if (num > max) {
+                max = num;
+            } else if (num < min) {
+                min = num;
+            }
+            num = +prompt("Enter a number: ");
+        }
+
+        console.log(`The biggest number is ${max} and the smallest number is ${min}`);
+    </script>
+</body>
+</html>

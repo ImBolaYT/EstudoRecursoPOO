@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 15</title>
+</head>
+<body>
+    <script>
+        // Forma 1
+        function returnFactorial(num) {
+            let factorial = 1;
+            for (let i = num; i > 0; i--) {
+                factorial *= i;
+            }
+            return factorial;
+        }
+
+        // Forma 2
+        function returnFactorials(num) {
+            let factorials = 1;
+            for (let i = 1; i <= num; i++) {
+                factorials *= i;
+            }
+            return factorials;
+        }
+
+        console.log(returnFactorial(5));
+        console.log(returnFactorials(5));
+
+    </script>
+</body>
+</html>

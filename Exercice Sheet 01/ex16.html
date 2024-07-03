@@ -1,0 +1,25 @@
+<!--NUMERO PERFEITO , PEDE UM NUMERO E DIZ SE É PERFEITO-->
+<!--UM NUMERO PERFEITO É UM NUMERO EM QUE A SOMA DOS SEUS DIVISORES NATURAIS É O PROPRIO NUMERO-->
+<!--EX: 28 = 1 + 2 + 4 + 7 + 14-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 16</title>
+</head>
+<body>
+    <script>
+        const num = +prompt("Enter a number: ");
+        let sum = 0;
+        for (let i = 1; i < num; i++) {
+            if (num % i === 0) {
+                sum += i;
+            }
+        }
+        
+        console.log(sum === num ? `YES` : `NO`);
+    </script>
+</body>
+</html>

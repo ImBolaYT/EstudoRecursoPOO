@@ -1,0 +1,24 @@
+<!--VERIFICA SE UM NUMERO É PRIMO OU NÃO PRIMO-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 05</title>
+</head>
+<body>
+    <script>
+        const num = +prompt("Enter a number: ")
+        let isPrime = true;
+        for (let i = 2; i < num; i++) {
+            if (num % i === 0) {
+                isPrime = false;
+                break;
+            }
+        }
+        console.log(isPrime ? `${num} is a prime number` : `${num} is not a prime number`);
+
+    </script>
+</body>
+</html>

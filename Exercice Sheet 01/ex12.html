@@ -1,0 +1,39 @@
+<!--PEDE 2 NUMEROS E UM OPERADOR (+,-,*,/) E FAZ A OPERAÇÃO ENTRE OS 2-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 12</title>
+</head>
+<body>
+    <script>
+        const num1 = +prompt("Numero 1: ");
+        const num2 = +prompt("Numero 2: ");
+        const operator = prompt("Operador (+,-,*,/): ");
+
+        let result;
+
+        switch (operator) {
+            case "+":
+                result = num1 + num2;
+                break;
+            case "-":
+                result = num1 - num2;
+                break;
+            case "*":
+                result = num1 * num2;
+                break;
+            case "/":
+                result = num1 / num2;
+                break;
+            default:
+                result = "Invalid operator";
+        }
+
+        console.log(result);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!--PEDE UMA FRASE E CHECKA SE É PALINDROME (LE-SE O MESMO DE FRENTE PRA TRÁS DE TRÁS PRA FRENTE)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 06</title>
+</head>
+<body>
+    <script>
+        const sentence = prompt("Escreva uma frase: ");
+        const reversed = sentence.split("").reverse().join("");
+        console.log(sentence);
+        console.log(reversed);
+        console.log(sentence === reversed ? "É um palíndromo" : "Não é um palíndromo");
+    </script>
+</body>
+</html>

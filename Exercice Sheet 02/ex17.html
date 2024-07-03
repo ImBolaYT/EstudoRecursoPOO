@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 17</title>
+</head>
+<body>
+    <script>
+        let isPerfect = function(num) {
+            let sum = 0;
+            for (let i = 1; i < num; i++) {
+                if (num % i === 0) {
+                    sum += i;
+                }
+            }
+            if (sum === num) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        let num = 0;
+        while (!isPerfect(num)) {
+            num = parseInt(prompt("Enter a number: "));
+        }
+        
+    </script>
+</body>
+</html>
