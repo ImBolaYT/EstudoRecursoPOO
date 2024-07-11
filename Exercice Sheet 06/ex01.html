@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    <form>
+        <label for="name">Nome: </label>
+        <input type="text" id="name" required>
+        <br><br>
+        <label for="category">Categoria: </label>
+        <select name="category" id="category" required>
+            <option value="Fruta">Fruta</option>
+            <option value="Legumes">Legumes</option>
+            <option value="Carne">Carne</option>
+            <option value="Peixe">Peixe</option>
+            <option value="Bebida">Bebida</option>
+            <option value="Outros">Outros</option>
+        </select>
+        <button type="button" onclick="addCategory()">NOVA CATEGORIA</button>
+        <br><br>
+        <label for="quantity">Quantidade: </label>
+        <input type="number" value="1" name="quantity" id="quantity" min="1" max="1000" required>
+        <br><br>
+        <input type="submit" value="Adicionar">
+    </form>
+    <br>
+    <hr>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Categoria</th>
+                <th>Quantidade</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <br>
+    <hr>
+    <br>
+    <div>
+        <button onclick="countProducts()">Nº Produtos</button>
+        <button onclick="productsPerCategory()">Produtos por Categoria</button>
+        <button onclick="totalProducts()">Quantidade Total</button>
+        <button onclick="clearList()">Limpar Lista</button>
+    </div>
+
+    <script src="ex01.js"></script>
+</body>
+</html>
