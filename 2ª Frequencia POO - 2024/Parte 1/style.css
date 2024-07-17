@@ -1,0 +1,35 @@
+body {
+    margin: 0%;
+}
+
+header {
+    background-color:deepskyblue;
+    margin: auto;
+    color: white;
+    min-height: 50px;
+    width: 100%;
+}
+
+header h1 {
+    padding: 30px 0;
+    margin: auto;
+    margin-left: 30px;
+}
+
+.row {
+    padding: 20px;
+    text-align: center;
+    margin-left: 100px;
+}
+
+/* 
+button {
+    background-color: transparent;
+    border: 0;
+}
+*/
+
+footer {
+    min-height: 80px;
+    background-color: gold;
+}
